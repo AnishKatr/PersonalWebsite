@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <!--About Me-->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="assets/cropprofphoto.jpg" alt="profilepic" class="rounded-circle" width="256" height="256">
+                <p>Hi! My name is Anish Katragadda, and I am a sophomore majoring in Computer Science and Engineering and I’m from Cerritos, California. I’ve always had an interest in technology, cars, and tinkering around with laptops and PCS, is what gave me true passion for computer science. And I'm always interested in learning about what’s new in Tech. Outside of school I spend a lot of time playing golf, watching Formula 1, detailing cars, traveling, and hanging out with my friends and family. Please feel free to reach out!</p>
+            </div>
+        </div>
+        <!--Projects Are Fun-->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Projects I've Worked on Recently</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src="{{picture}}" alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the Project Section to Learn More</p>
+        </div>
+    </div>
+</div>
