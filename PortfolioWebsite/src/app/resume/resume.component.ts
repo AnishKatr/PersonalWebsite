@@ -14,8 +14,8 @@ export class ResumeComponent {
   DownloadFile(){
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/Anish Katragadda - Resume.pdf');
-    link.setAttribute('download', 'Anish Katragadda - Resume.pdf');
+    link.setAttribute('href', '../../assets/AnishKatragadda-Resume.pdf');
+    link.setAttribute('download', 'AnishKatragadda-Resume.pdf');
     link.click();
     link.remove();
   }
